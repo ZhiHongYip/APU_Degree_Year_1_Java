@@ -1,0 +1,8 @@
+Quad Room
+Double Room
+Queen Room
+Twin Room
+Single Room
+King Room
+Triple Room
+Double-Double Room

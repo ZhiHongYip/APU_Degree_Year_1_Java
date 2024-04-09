@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="542.0" prefWidth="940.0" style="-fx-background-color: FCF5E2;" stylesheets="@Css/Font.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.CustomerListController">
+   <children>
+      <HBox prefHeight="619.0" prefWidth="286.0" style="-fx-background-color: FCF5E2;">
+         <children>
+            <VBox alignment="TOP_CENTER" prefHeight="149.0" prefWidth="264.0">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="80.0" prefWidth="266.0">
+                     <children>
+                        <ImageView fitHeight="164.0" fitWidth="251.0" pickOnBounds="true" preserveRatio="true">
+                           <VBox.margin>
+                              <Insets bottom="14.0" left="7.0" right="7.0" top="7.0" />
+                           </VBox.margin>
+                           <image>
+                              <Image url="@Icon/hotel%20logo%20transparent.png" />
+                           </image>
+                        </ImageView>
+                        <Line endX="164.2928924560547" endY="1.6033649444580078E-5" startX="-100.0" />
+                     </children>
+                     <padding>
+                        <Insets top="5.0" />
+                     </padding>
+                  </VBox>
+                  <VBox alignment="CENTER" prefHeight="251.0" prefWidth="266.0">
+                     <padding>
+                        <Insets top="5.0" />
+                     </padding>
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="45.0" prefWidth="264.0" style="-fx-background-color: #F9A801;">
+                           <VBox.margin>
+                              <Insets bottom="5.0" />
+                           </VBox.margin>
+                           <children>
+                              <ImageView fitHeight="25.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Icon/online-booking.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets right="30.0" />
+                                 </HBox.margin></ImageView>
+                              <Button mnemonicParsing="false" onAction="#goToReserve" prefHeight="38.0" prefWidth="152.0" style="-fx-background-color: FECB75;" text="Reservation" HBox.hgrow="ALWAYS">
+                                 <font>
+                                    <Font name="Tw Cen MT Bold" size="15.0" />
+                                 </font></Button>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="45.0" prefWidth="264.0" style="-fx-background-color: #F9A801;">
+                           <VBox.margin>
+                              <Insets bottom="5.0" />
+                           </VBox.margin>
+                           <children>
+                              <ImageView fitHeight="25.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                                 <HBox.margin>
+                                    <Insets right="30.0" />
+                                 </HBox.margin>
+                                 <image>
+                                    <Image url="@Icon/bed.png" />
+                                 </image></ImageView>
+                              <Button mnemonicParsing="false" onAction="#goToRoom" prefHeight="38.0" prefWidth="152.0" style="-fx-background-color: FECB75;" text="Room" HBox.hgrow="ALWAYS">
+                                 <font>
+                                    <Font name="Tw Cen MT Bold" size="15.0" />
+                                 </font></Button>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="45.0" prefWidth="264.0" style="-fx-background-color: #F9A801;">
+                           <VBox.margin>
+                              <Insets bottom="5.0" />
+                           </VBox.margin>
+                           <children>
+                              <ImageView fitHeight="25.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                                 <HBox.margin>
+                                    <Insets right="30.0" />
+                                 </HBox.margin>
+                                 <image>
+                                    <Image url="@Icon/team.png" />
+                                 </image></ImageView>
+                              <Button mnemonicParsing="false" onAction="#goToCustomerList" prefHeight="38.0" prefWidth="152.0" style="-fx-background-color: FECB75;" text="Customer List" HBox.hgrow="ALWAYS">
+                                 <font>
+                                    <Font name="Tw Cen MT Bold" size="15.0" />
+                                 </font></Button>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <AnchorPane prefHeight="34.0" prefWidth="266.0">
+                     <children>
+                        <ImageView fitHeight="80.0" fitWidth="66.0" layoutX="39.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Icon/account.png" />
+                           </image></ImageView>
+                        <Label fx:id="label_username" layoutX="117.0" layoutY="25.0" prefHeight="22.0" prefWidth="145.0" text="ADMIN">
+                           <font>
+                              <Font name="Tw Cen MT Bold" size="19.0" />
+                           </font></Label>
+                     </children>
+                  </AnchorPane>
+                  <VBox alignment="CENTER" prefHeight="75.0" prefWidth="264.0">
+                     <children>
+                        <Line endX="100.0" startX="-100.0">
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </Line>
+                        <Button mnemonicParsing="false" onAction="#signOut" prefHeight="26.0" prefWidth="85.0" stylesheets="@Css/plusbtn.css" text="Log Out" textFill="WHITE">
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin></Button>
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+            <Separator orientation="VERTICAL" prefHeight="200.0" />
+         </children>
+      </HBox>
+      <VBox layoutX="268.0" prefHeight="619.0" prefWidth="789.0">
+         <children>
+            <VBox layoutX="151.0" prefHeight="48.0" prefWidth="789.0">
+               <children>
+                  <AnchorPane prefHeight="48.0" prefWidth="789.0" style="-fx-background-color: FD5C5A; -fx-border-color: 222; -fx-border-width: 0.1;">
+                     <children>
+                        <Text fill="#fcf5e2" layoutX="39.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CUSTOMER LIST" x="275.0">
+                           <font>
+                              <Font name="Tw Cen MT Bold" size="24.0" />
+                           </font></Text>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </VBox>
+            <VBox prefHeight="119.0" prefWidth="789.0">
+               <children>
+                  <AnchorPane prefHeight="119.0" prefWidth="789.0">
+                     <children>
+                        <VBox layoutX="35.0" layoutY="27.0" prefHeight="17.0" prefWidth="100.0">
+                           <children>
+                              <TextField fx:id="nameTBox" promptText="Name" stylesheets="@Css/textfield.css">
+                                 <font>
+                                    <Font name="Tw Cen MT Bold" size="15.0" />
+                                 </font></TextField>
+                              <Line endX="50.0" startX="-100.0" visible="false" />
+                           </children>
+                        </VBox>
+                        <VBox layoutX="222.0" layoutY="27.0">
+                           <children>
+                              <TextField fx:id="phoneNumberTBox" promptText="Phone Number" stylesheets="@Css/textfield.css">
+                                 <font>
+                                    <Font name="Tw Cen MT Bold" size="15.0" />
+                                 </font>
+                              </TextField>
+                              <Line endX="96.89292907714844" startX="-100.0" visible="false" />
+                           </children>
+                        </VBox>
+                        <VBox layoutX="454.0" layoutY="27.0">
+                           <children>
+                              <TextField fx:id="roomNumberTBox" promptText="Room Number">
+                                 <font>
+                                    <Font name="Tw Cen MT Bold" size="15.0" />
+                                 </font>
+                                 <stylesheets>
+                                    <URL value="@Css/searchbtn.css" />
+                                    <URL value="@Css/textfield.css" />
+                                 </stylesheets></TextField>
+                              <Line endX="50.0" startX="-100.0" visible="false" />
+                           </children>
+                        </VBox>
+                        <CheckBox fx:id="checkOutList" layoutX="90.0" layoutY="81.0" mnemonicParsing="false" stylesheets="@Css/checkbox.css" text="Checked Out List" textFill="#123c69">
+                           <font>
+                              <Font name="Tw Cen MT Bold" size="14.0" />
+                           </font></CheckBox>
+                        <CheckBox fx:id="bookedList" layoutX="236.0" layoutY="81.0" mnemonicParsing="false" stylesheets="@Css/checkbox.css" text="Booked List" textFill="#123c69">
+                           <font>
+                              <Font name="Tw Cen MT Bold" size="14.0" />
+                           </font></CheckBox>
+                        <CheckBox fx:id="checkInList" layoutX="361.0" layoutY="81.0" mnemonicParsing="false" stylesheets="@Css/checkbox.css" text="Check In List" textFill="#123c69">
+                           <font>
+                              <Font name="Tw Cen MT Bold" size="14.0" />
+                           </font></CheckBox>
+                        <Button layoutX="662.0" layoutY="25.0" maxWidth="86.0" minHeight="18.0" mnemonicParsing="false" onAction="#search" prefHeight="38.0" prefWidth="86.0" stylesheets="@Css/searchbtn.css" text="Search">
+                           <effect>
+                              <DropShadow blurType="TWO_PASS_BOX" />
+                           </effect>
+                           <font>
+                              <Font name="Tw Cen MT Bold" size="14.0" />
+                           </font></Button>
+                        <RadioButton fx:id="selectAll" layoutX="492.0" layoutY="79.0" mnemonicParsing="false" onAction="#select_All" stylesheets="@Css/radiobtn.css" text="Select All" textFill="#123c69">
+                           <font>
+                              <Font name="Tw Cen MT Bold" size="14.0" />
+                           </font></RadioButton>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </VBox>
+            <VBox prefHeight="453.0" prefWidth="789.0">
+               <children>
+                  <TableView fx:id="customerList" prefHeight="458.0" style="-fx-background-color: white; -fx-padding: 0;" stylesheets="@Css/table.css">
+                    <columns>
+                      <TableColumn fx:id="columnCustomerNo" prefWidth="47.0" text="No" />
+                      <TableColumn fx:id="columnRoomNo" prefWidth="77.0" text="Room No" />
+                        <TableColumn fx:id="columnCustomerName" prefWidth="134.0" text="Name" />
+                        <TableColumn fx:id="columnPhoneNumber" prefWidth="112.0" text="Phone Number" />
+                        <TableColumn fx:id="columnReservedTime" prefWidth="132.00006103515625" text="Reserved Time" />
+                        <TableColumn fx:id="columnStatus" prefWidth="108.0" text="Status" />
+                        <TableColumn fx:id="columnCheckInDate" prefWidth="108.0" text="Check In Date" />
+                        <TableColumn fx:id="columnCheckOutDate" prefWidth="108.7999267578125" text="Check Out Date" />
+                        <TableColumn fx:id="columActualCheckInDate" editable="false" prefWidth="130.0" sortable="false" text="Actual Check In Date" />
+                        <TableColumn fx:id="columActualCheckOutDate" editable="false" prefWidth="135.0" sortable="false" text="Actual Check Out Date" />
+                    </columns>
+                  </TableView>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: FCF5E2;" stylesheets="@Css/Font.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.PopUpPaymentController">
+   <children>
+      <VBox alignment="CENTER" prefHeight="56.0" prefWidth="600.0" style="-fx-background-color: FD5C5A;">
+         <children>
+            <Label text="SELECT PAYMENT METHOD" textFill="#fcf5e2">
+               <font>
+                  <Font name="Tw Cen MT Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <VBox alignment="CENTER" layoutY="56.0" prefHeight="344.0" prefWidth="600.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="cardBtn" mnemonicParsing="false" onAction="#card" prefHeight="46.0" prefWidth="201.0" stylesheets="@Css/payment.css" text="CREDIT/ DEBIT CARD">
+                     <graphic>
+                        <ImageView fitHeight="44.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Icon/credit-card.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="Tw Cen MT Bold" size="12.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="cashBtn" mnemonicParsing="false" onAction="#cash" prefHeight="46.0" prefWidth="201.0" stylesheets="@Css/payment.css" text="CASH                        ">
+                     <graphic>
+                        <ImageView fitHeight="44.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Icon/dollar.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="Tw Cen MT Bold" size="12.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="eWalletBtn" mnemonicParsing="false" onAction="#eWallet" prefHeight="46.0" prefWidth="201.0" stylesheets="@Css/payment.css" text="E-WALLET                 ">
+                     <graphic>
+                        <ImageView fitHeight="44.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Icon/e-wallet.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="Tw Cen MT Bold" size="12.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="onlineBankingBtn" mnemonicParsing="false" onAction="#onlineBanking" prefHeight="46.0" prefWidth="201.0" stylesheets="@Css/payment.css" text="ONLINE BANKING      ">
+                     <graphic>
+                        <ImageView fitHeight="44.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Icon/fpx.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="Tw Cen MT Bold" size="12.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
